@@ -1,0 +1,133 @@
+<html>
+<head>
+	<title>Syntax Highlighter Demo</title>
+	
+	 <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- HiliSyntax javascript link  -->
+    <script type="text/javascript" src="./js/HiliSyntax_Live.js"></script>
+    
+    <!-- // custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- font awesome icons -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">    <!-- // using bootstrap links -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <section class="header">
+    <div class="row">
+      <div class="col-sm-3">
+        <inline><h5 style="font-weight: bold; color: white; ">mGraph</h5>
+          <p>Graph Making Tool</p></inline>  
+      </div>
+      <div class="col-sm-5">
+
+      </div>
+      <div class="col-sm-4">
+        <div>
+          <a href="#"><inline><img src="img/icons/instagram.svg" alt="BlareGroup HOME"></inline>@blaregroup</a>
+          <a href="www.blaregroup.com/products"><img src="img/icons/dollar.svg" alt="">DONATE</a>
+          <a href="www.blaregroup.com/contact-us"><img src="img/icons/house.svg" alt="">HOME</a>
+          <a href="www.blaregroup.com/contact-us"><img src="img/icons/megaphone.svg" alt="">Bug Report & Feedback</a>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+
+  <section class="editor-section">
+    
+    <div class="row">
+
+      <section class="col-sm-2"> 
+        <h4 style="padding: 10px; font-weight: bold;">Select Your Graph Choice </h4>
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="img/icons/bchart.svg" title="bar chart" alt="graph">
+          </div>
+          <div class="col-sm-4">
+            <img src="img/icons/hbchart.svg" title="horizontal bar chart" alt="flow chart">
+          </div>
+          <div class="col-sm-4">
+            <img src="img/icons/lchart.svg" title="line chart" alt="pie chart">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="img/icons/fchart.svg" title="flow chart" alt="graph">
+          </div>
+          <div class="col-sm-4">
+            <img src="img/icons/dchart.svg" title="dot chart" alt="flow chart">
+          </div>
+          <div class="col-sm-4">
+            <img src="img/icons/pchart.svg" title="pie-chart" alt="pie chart">
+          </div>
+        </div>
+
+        <div class="how-to-use">
+          <div>
+            <h6 class="font-weight: bold;">Follow Steps:</h6>
+            <ol>
+              <li>Enter table data in the box.</li>
+              <li>Then select graph choice(given above).</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="col-sm-5">
+        <div class="input-div">
+          <h6>DATA TABLE</h6>
+        </div>
+        <textarea name="name" class="" autofocus="autofocus" id="input"  oninput="transform()">
+          
+        </textarea>
+      </section>
+
+      <section class="col-sm-5">
+        <div class="input-div">
+          <h6>PREVIEW</h6>
+        </div>
+        <div id="output-div" >
+          <pre id="output-area">
+          </pre>
+
+        </div>
+      </section>
+    </div>
+
+    <section class="sidebar">
+     <div class="services">
+       <img src="img/icons/paper.svg" alt="Downlad in Svg" title="Copy HTML Code">
+       <img src="img/icons/download.svg" alt="Copy html Code" title="Download SVG File">
+       <img src="img/icons/html.svg" alt="Copy html Code" title="Download HTML File">
+     </div>
+    </section>
+
+</div>
+
+
+
+  </section>
+  
+  <footer>
+    BlareGroup &copy 2019
+  </footer>
+</body>
+</html>
