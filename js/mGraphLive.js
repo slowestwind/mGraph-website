@@ -584,17 +584,46 @@ function mgraph_draw(pre_input_id){
 	textProcessor(objc.value);
 }
 
-
+*/
 function transform()
 {
-	mgraph_draw(input_id);
+	//mgraph_draw();
+	var democontent = document.getElementById(input_id).value;
+	//var demodata = democontent.value;
+	switch(currentchart)
+	{
+		
+		case 1:
+		barchart(democontent,'bchrt');
+		break;
+		case 2:
+		barchart(democontent,'hbchrt');
+		break;
+		case 3:
+		barchart(democontent,'lchart');
+		break;
+		case 4:
+		flowchart(democontent);
+		break;
+		case 5:
+		barchart(democontent,'dchrt');
+		break;
+		case 6:
+		piechart(democontent);
+		break;
+	}
+
 }
-*/
+var currentchart;
+
 
 function chart_demo(chart_no)
 {
+//	var democontent = document.getElementById(input_id);
+//	var demodata = "|Look|2018|\n|Suraj|65|\n|Arvind|56|\n|Himanshu|50|\n";
 	var democontent = document.getElementById(input_id);
 	var demodata = "|Look|2018|\n|Suraj|65|\n|Arvind|56|\n|Himanshu|50|\n";
+
 	if(democontent.value==null)
 	{
 		alert("hello");
@@ -605,31 +634,38 @@ function chart_demo(chart_no)
 		case 1:
 		democontent.value=demodata;	
 		barchart(demodata,'bchrt');
+		currentchart = 1;
 		pprint('barchart');
+
 		break;
 		case 2:
 		democontent.value=demodata;	
 		barchart(demodata,'hbchrt');
+		currentchart = 2;
 		pprint('barchart');
 		break;
 		case 3:
 		democontent.value=demodata;	
 		barchart(demodata,'linechart');
+		currentchart = 3;
 		pprint('barchart');
 		break;
 		case 4:
 		democontent.value=demodata;	
 		flowchart(demodata);
+		currentchart = 4;
 		pprint('barchart');
 		break;
 		case 5:
 		democontent.value=demodata;	
 		barchart(demodata,'dchrt');
+		currentchart = 5;
 		pprint('barchart');
 		break;
 		case 6:
 		democontent.value=demodata;	
 		piechart(demodata);
+		currentchart = 6;
 		pprint('piechart');
 		break;
 		
