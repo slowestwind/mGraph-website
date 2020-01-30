@@ -103,7 +103,6 @@ body{
   .editor-section .row .col-sm-2 .featured-content {
     height: 90vh;
     width: 100%;
-
   }
   
   textarea {
@@ -128,8 +127,11 @@ body{
   }
 
   .how-to-use{
-    padding-top: 100px;
-    padding-left: 25px;
+    margin-left: 10px;
+    padding: 20px;
+    font-size: 12px;
+    box-shadow: 2px 2px 2px 2px #cccccc;
+
   }
   
   .sidebar {
@@ -149,6 +151,19 @@ body{
     width: 47px;
   }
 
+  .other-product {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 20px;
+    height: 33vh;
+    box-shadow: 2px 2px 2px 2px #cccccc;
+  }
+
+  .other-product p{
+    line-height: 0.9;
+    font-size: 12px;
+
+  }
 
   /* footer */
   footer {
