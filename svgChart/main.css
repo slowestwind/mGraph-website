@@ -1,0 +1,54 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .graph .labels.x-labels {
+    text-anchor: middle;
+    fill: black;
+    font-weight: bold;
+  }
+  
+  .graph .labels.y-labels {
+    text-anchor: end;
+    fill: black;
+  }
+  
+  
+  .graph {
+    height: 500px;
+    width: 800px;
+  }
+  
+  .graph .grid {
+    stroke: #ccc;
+    stroke-dasharray: 0;
+    stroke-width: 1;
+  }
+  
+  .labels {
+    font-size: 13px;
+  }
+  
+  .label-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    fill: black;
+  }
+
+
+  .y-label-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    fill: black;
+    transform : "rotate(90)";
+  }
+  
+  .data {
+    fill: red;
+    stroke-width: 1; 
+  }
+  
+  

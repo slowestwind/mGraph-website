@@ -1,20 +1,24 @@
 <html>
 <head>
-	<title>Syntax Highlighter Demo</title>
+	<title>mGraph</title>
 	
 	 <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- HiliSyntax javascript link  -->
-    <script type="text/javascript" src="./js/HiliSyntax_Live.js"></script>
+    <!-- mGraph javascript link  -->
+     <script type="text/javascript" src="./js/mGraphLive.js"></script>
     
     <!-- // custom CSS -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css">   			<!--Interface css file-->
+    <link rel="stylesheet" href="./svgChart/main.css"> 		<!--SVG  css file-->
+
 
     <!-- font awesome icons -->
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">    <!-- // using bootstrap links -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    	<!-- // using bootstrap links -->
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
@@ -39,8 +43,8 @@
       </div>
       <div class="col-sm-4">
         <div>
-          <a href="#"><inline><img src="img/icons/instagram.svg" alt="BlareGroup HOME"></inline>@blaregroup</a>
-          <a href="www.blaregroup.com/products"><img src="img/icons/dollar.svg" alt="">DONATE</a>
+          <a href="https://instagram.com/blaregroup/" target="blank"><inline><img src="img/icons/instagram.svg" alt="BlareGroup HOME"></inline>@blaregroup</a>
+          <a href="www.blaregroup.com/products" ><img src="img/icons/dollar.svg" alt="">DONATE</a>
           <a href="www.blaregroup.com/contact-us"><img src="img/icons/house.svg" alt="">HOME</a>
           <a href="www.blaregroup.com/contact-us"><img src="img/icons/megaphone.svg" alt="">Bug Report & Feedback</a>
         </div>
@@ -58,25 +62,25 @@
         <h4 style="padding: 10px; font-weight: bold;">Select Your Graph Choice </h4>
         <div class="row">
           <div class="col-sm-4">
-            <img src="img/icons/bchart.svg" title="bar chart" alt="graph">
+            <img src="img/icons/bchart.svg" title="bar chart" alt="bar chart" onclick="chart_demo(1)">
           </div>
           <div class="col-sm-4">
-            <img src="img/icons/hbchart.svg" title="horizontal bar chart" alt="flow chart">
+            <img src="img/icons/hbchart.svg" title="horizontal bar chart" alt="horizontal bar chart" onclick="chart_demo(2)">
           </div>
           <div class="col-sm-4">
-            <img src="img/icons/lchart.svg" title="line chart" alt="pie chart">
+            <img src="img/icons/lchart.svg" title="line chart" alt=" line chart" onclick="chart_demo(3)" >
           </div>
         </div>
 
         <div class="row">
           <div class="col-sm-4">
-            <img src="img/icons/fchart.svg" title="flow chart" alt="graph">
+            <img src="img/icons/fchart.svg" title="flow chart" alt="flow chart" onclick="chart_demo(4)">
           </div>
           <div class="col-sm-4">
-            <img src="img/icons/dchart.svg" title="dot chart" alt="flow chart">
+            <img src="img/icons/dchart.svg" title="dot chart" alt="dot chart" onclick="chart_demo(5)">
           </div>
           <div class="col-sm-4">
-            <img src="img/icons/pchart.svg" title="pie-chart" alt="pie chart">
+            <img src="img/icons/pchart.svg" title="pie-chart" alt="pie chart" onclick="chart_demo(6)">
           </div>
         </div>
 
@@ -95,13 +99,13 @@
           <h6 style="font-weight: bold;" >Other Software</h6>
           <ul>
             <li>
-              <a href=""> 
+              <a href="https://cdn.statically.io/gh/blaregroup/mdviewer/master/index.html" target="blank"> 
                 <p><b>Markdown Editor</b></p>
                 <p>Markdown to html converter and webview tool.</p>               
               </a>
               </li>
             <li>
-              <a href="">
+              <a href="https://cdn.statically.io/gh/blaregroup/HiliSyntax/master/LiveHiliSyntax.html" target="blank">
                 <p><b>Syntax Highlighter</b></p>
                 <p>Hilight syntax of your program code.</p>
               </a>
